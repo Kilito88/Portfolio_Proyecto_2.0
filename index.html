@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Premium | Industrial Systems & Modern Software Developer</title>
+
+    <!-- Meta tags SEO -->
+    <meta name="description"
+        content="Portfolio profesional de un Técnico en Automatización Industrial y Desarrollador de Software moderno. Experiencia real en industria aplicada al desarrollo tech.">
+
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/logo-navbar-fix.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- LOADER INICIAL -->
+    <div id="loader">
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+        <div class="loader-text">Desarrollando...</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Background Effects -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="glow-bg top-glow"></div>
+    <div class="glow-bg bottom-glow"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar sticky-nav">
+        <div class="nav-container">
+            <a href="#contact" class="logo">
+                <img src="assets/img/tu-logo.jpg" alt="Logo Marca Personal" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">Sobre mí</a>
+                <a href="#experience" class="nav-link">Experiencia</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+            </nav>
+            <a href="#contact" class="btn btn-neon">Contactar</a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle reveal-text">Hola, soy</p>
+                    <h1 class="hero-title reveal-text">Cristian Sáez García</h1>
+                    <h2 class="hero-role reveal-text gradient-text"> Con la perspectiva estratégica de quien ya
+                        comprende el mundo real y la energía de quien nunca deja de aprender en cada línea de código.
+                    </h2>
+
+                    <div class="hero-cta reveal-text">
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#contact" class="btn btn-secondary">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-scale">
+                    <div class="image-wrapper glass-panel">
+                        <div class="imagen-central">
+                            <span><img src="/img/Cristian.png" alt="foto-perfil"></span>
+                        </div>
+                        <div class="img-glow"></div>
+
+                        <!-- Floating UI Elements -->
+                        <div class="floating-badge badge-1">
+                            <span class="dot green"></span> Sistema Listo
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <span class="icon">{}</span> Lógica Activa
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">Deslizar</span>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ SECTION -->
+        <section id="about" class="about-section fade-in-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">01 //</span>
+                    <h2 class="section-title">Sobre mí</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="about-content grid-2-col">
+                    <div class="about-text glass-card">
+                        <h3 class="card-title">Evolución Profesional</h3><br>
+                        <p>Mi trayectoria se define por una evolución constante orientada a entender y optimizar cómo
+                            funcionan las cosas. Comencé mi camino en el sector de la electricidad de baja tensión,
+                            asentando las bases de las infraestructuras físicas. Desde ahí, di un paso natural hacia los
+                            sistemas de regulación y control automáticos, adentrándome en la lógica que gobierna las
+                            máquinas y los procesos técnicos.</p>
+
+                        <p>Hoy, canalizo todo ese bagaje hacia el desarrollo de software multiplataforma. No es un
+                            cambio de rumbo aleatorio, sino la culminación lógica de mi perfil: pasar de conectar cables
+                            y automatizar sistemas físicos a estructurar código y aplicaciones modernas.</p>
+
+                        <p>Aporto el valor de una sólida experiencia de bastantes años en el mundo laboral; un recorrido
+                            que me ha otorgado una visión estratégica, una alta capacidad de adaptación y una madurez
+                            clave para entender entornos de trabajo críticos. Me considero con un alto nivel de
+                            profesionalidad y un carácter perfeccionista que no se conforma con cualquier cosa: herencia
+                            de la industria, entiendo que el código, al igual que un sistema de control, debe ser
+                            preciso, limpio y eficiente.</p>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="+15">0</span>
+                                <span class="stat-label">Años Experiencia Laboral</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="+4">0</span>
+                                <span class="stat-label">Años en Sistemas Integrados</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="100">0</span>
+                                <span class="stat-label">% Adaptabilidad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="values-grid">
+                        <div class="value-card glass-card hover-glow">
+                            <div class="value-icon">⚙️</div>
+                            <h4>Resolución de Problemas</h4>
+                            <p>Diagnóstico preciso y soluciones eficaces ante fallos sistémicos.</p>
+                        </div>
+                        <div class="value-card glass-card hover-glow">
+                            <div class="value-icon">🔄</div>
+                            <h4>Adaptabilidad</h4>
+                            <p>Capacidad probada de aprendizaje continuo en entornos cambiantes.</p>
+                        </div>
+                        <div class="value-card glass-card hover-glow">
+                            <div class="value-icon">⚡</div>
+                            <h4>Fiabilidad</h4>
+                            <p>Código y sistemas diseñados para no fallar, herencia de la industria.</p>
+                        </div>
+                        <div class="value-card glass-card hover-glow">
+                            <div class="value-icon">🎨</div>
+                            <h4>Atención al Detalle</h4>
+                            <p>Desde el cuadro eléctrico hasta el último pixel de la UI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL (TIMELINE) -->
+        <section id="experience" class="experience-section fade-in-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">02 //</span>
+                    <h2 class="section-title">Trayectoria</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot glow-blue"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">Actualidad</span>
+                            <h3 class="timeline-role">Desarrollador de Software</h3>
+                            <span class="timeline-company">Proyectos Propios / Formación (1º DAM)</span>
+                            <p class="timeline-desc">Desarrollo de aplicaciones web modernas, interfaces de usuario
+                                interactivas y arquitectura de software. Enfoque en tecnologías frontend avanzadas y
+                                patrones de diseño.</p>
+                            <div class="tech-tags">
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>Git</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot glow-purple"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date"></span>
+                            <h3 class="timeline-role">Técnico en Automatización y Mantenimiento</h3>
+                            <span class="timeline-company">Metaldyne</span>
+                            <p class="timeline-desc">Especialista en mantenimiento predictivo, preventivo y correctivo
+                                de sistemas de automatización industrial. Experiencia clave en la programación y
+                                optimización de PLCs, parametrización avanzada de variadores de frecuencia y sensórica.
+                                Responsable del diagnóstico preciso de averías en redes de control y de la
+                                automatización de procesos complejos para maximizar la eficiencia y continuidad
+                                operativa de la planta.</p>
+                            <div class="tech-tags">
+                                <span>PLC Siemens</span>
+                                <span>Allen - Bradley</span>
+                                <span>Festo</span>
+                                <span>Omron</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot glow-purple"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date"></span>
+                            <h3 class="timeline-role">Técnico en Mantenimiento</h3>
+                            <span class="timeline-company">Carrefour</span>
+                            <p class="timeline-desc">Responsable del mantenimiento preventivo, correctivo y de nuevas
+                                instalaciones eléctricas y de iluminación en el centro. Diagnóstico rápido de averías en
+                                cuadros de baja tensión y maquinaria, junto con el control de sistemas críticos de
+                                climatización. Ejecución y supervisión de maniobras en simulacros de falta de tensión,
+                                garantizando la continuidad operativa mediante grupos electrógenos y sistemas de
+                                emergencia.</p>
+                            <div class="tech-tags">
+                                <span>Carrier</span>
+                                <span>Trilux</span>
+                                <span>Bizerba</span>
+                                <span>Philips</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot glow-purple"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date"></span>
+                            <h3 class="timeline-role">Instalador eléctrico</h3>
+                            <span class="timeline-company">Aktis</span>
+                            <p class="timeline-desc">Especialista en instalaciones eléctricas en el ámbito residencial,
+                                industrial y de distribución. Experiencia en el despliegue de redes, tendido de cableado
+                                estructurado, tirada de datos y líneas de media tensión. Responsable del montaje de
+                                cuadros de protección, automatismos y de las maniobras de interconexión y mantenimiento
+                                en centros de transformación, garantizando la máxima seguridad y eficiencia energética.
+                            </p>
+                            <div class="tech-tags">
+                                <span>Unex</span>
+                                <span>Siemenes</span>
+                                <span>Legrand</span>
+                                <span>ABB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section fade-in-section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-tag">03 //</span>
+                    <h2 class="section-title">Stack Tecnológico y de Ingeniería</h2>
+                    <p class="section-subtitle">Del hardware de bajo nivel a las interfaces modernas.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Software Dev -->
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <div class="icon-wrap"></div>
+                            <h3>Skill Bars</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Base de Datos & SQL</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress js-progress" data-width="79%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML & CSS</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress html-progress" data-width="96%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Lógica y estructura de datos</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress css-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Sistemas informáticos y lenguajes</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress api-progress" data-width="93%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Industrial -->
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <div class="icon-wrap"></div>
+                            <h3>Tech Stack</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="tech-tag glow-hover">Intelliji IDEA</span>
+                            <span class="tech-tag glow-hover">Git & GitHub</span>
+                            <span class="tech-tag glow-hover">XML Server</span>
+                            <span class="tech-tag glow-hover">Linux</span>
+                            <span class="tech-tag glow-hover">VS Code</span>
+                            <span class="tech-tag glow-hover">Git Bash</span>
+                            <span class="tech-tag glow-hover">Oracle</span>
+                            <span class="tech-tag glow-hover">SQL Developer</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS SECTION -->
+        <section id="projects" class="projects-section fade-in-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">04 //</span>
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card tilt-card">
+                        <div class="project-img-wrap">
+                            <div class="project-overlay">
+                                <a class="btn btn-outline" href="https://www.abrebox.com/" target="_blank"
+                                    rel="noopener noreferrer">Visitar Abrebox</a>
+                            </div>
+                            <div class="placeholder-img abrebox-bg"></div>
+                        </div>
+                        <div class="project-info glass-card-bottom">
+                            <h3 class="project-title">Integración e Infraestructura IoT — Abrebox</h3>
+                            <p class="project-desc">Colaboración en el ecosistema técnico de videoportería inteligente y
+                                control de accesos en la nube. Análisis del flujo de datos en tiempo real entre hardware
+                                (placas IP) y software (aplicaciones móviles), comprendiendo la arquitectura Cloud,
+                                desvío de llamadas y apertura remota de sistemas de seguridad.</p>
+                            <div class="tech-tags small">
+                                <span>Sistemas Cloud</span>
+                                <span>Conectividad IP</span>
+                                <span>MongoDB</span>
+                                <span>PropTech</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card tilt-card">
+                        <div class="project-img-wrap">
+                            <div class="project-overlay">
+                                <a class="btn btn-outline" href="https://github.com/Kilito88" target="_blank"
+                                    rel="noopener noreferrer">Proyecto en GitHub</a>
+                            </div>
+                            <div class="placeholder-img github-bg"></div>
+                        </div>
+                        <div class="project-info glass-card-bottom">
+                            <h3 class="project-title">Portfolio Interactivo de Marca Propia</h3>
+                            <p class="project-desc">Proyecto personal desarrollado para exponer mi flujo de trabajo en
+                                diseño web inmersivo y animaciones. El sitio en el que navegas es el producto final.
+                                Consulta los detalles de la implementación en mi GitHub.</p>
+                            <div class="tech-tags small">
+                                <span>HTML5</span>
+                                <span>CSS3 Avanzado</span>
+                                <span>JS Animations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO SECTION -->
+        <section id="contact" class="contact-section fade-in-section">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-tag">05 //</span>
+                        <h2 class="section-title">¿Hablamos?</h2>
+                        <p class="contact-desc">Entiendo la tecnología de principio a fin. Mi perfil combina
+                            conocimientos en hardware y software, lo que me permite aportar una visión integral y
+                            resolutiva a cualquier equipo de desarrollo. No solo escribo código; resuelvo problemas
+                            complejos entendiendo el sistema completo. Si buscas una perspectiva técnica y proactiva,
+                            ¡hablemos!
+                        </p>
+
+                        <div class="contact-links">
+                            <a href="saezgarciacristian@gmail.com" class="contact-item hover-glow">
+                                <span class="icon">📧</span>
+                                <span class="text">saezgarciacristian@gmail.com</span>
+                            </a>
+                            <a href="[URL_LINKEDIN]" class="contact-item hover-glow" target="_blank">
+                                <span class="icon">💼</span>
+                                <span class="text">Perfil de LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Kilito88" class="contact-item hover-glow" target="_blank">
+                                <span class="icon">🐱</span>
+                                <span class="text">Portfolio de GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrap glass-card">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre / Empresa</label>
+                                <input type="text" id="name" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" required placeholder="¿En qué puedo ayudarte?"
+                                    rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-neon w-100">Enviar Mensaje</button>
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content flex-footer">
+            <p class="copyright">Desarrollado y Programado por Cristian Sáez Garcia © 2026</p>
+            <div class="logo-sm">
+                <img src="assets/img/tu-logo.jpg" alt="Logo Marca Personal">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

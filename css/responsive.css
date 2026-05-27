@@ -1,0 +1,104 @@
+/* RESPONSIVE DESIGN */
+
+/* Tablets & Smaller Desktop */
+@media screen and (max-width: 1024px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    .hero-role {
+        font-size: 1.5rem;
+    }
+    .grid-2-col {
+        gap: 2rem;
+    }
+    .contact-grid {
+        gap: 2rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    /* Hide custom cursor on touch devices */
+    .custom-cursor,
+    .custom-cursor-follower {
+        display: none !important;
+    }
+    html {
+        cursor: auto;
+    }
+    
+    .section-container {
+        padding: 5rem 5%;
+    }
+    
+    /* Navbar */
+    .mobile-menu-btn {
+        display: block;
+    }
+    .nav-links, .navbar .btn {
+        display: none; /* Hide by default on mobile */
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--color-bg-dark);
+        padding: 2rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        text-align: center;
+    }
+    
+    /* Hero */
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+    .hero-summary {
+        margin: 0 auto 2rem;
+    }
+    .hero-cta {
+        justify-content: center;
+    }
+    .badge-1 { right: 0; }
+    .badge-2 { left: 0; }
+    
+    /* About */
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+    .about-stats {
+        flex-direction: column;
+        text-align: center;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .text-center .title-line {
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-role {
+        font-size: 1.2rem;
+    }
+    .hero-cta {
+        flex-direction: column;
+    }
+}
