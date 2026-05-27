@@ -1205,6 +1205,8 @@ a {
 .abrebox-bg {
     /* Ruta a tu imagen */
     background-image: url('/img/favicon.png');
+    height: 250px; /* O el tamaño que desees para tus tarjetas */
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -1225,6 +1227,8 @@ a {
 .github-bg {
     /* Ruta a tu imagen */
     background-image: url('/img/GitHub.png');
+    height: 250px; /* O el tamaño que desees para tus tarjetas */
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
 
