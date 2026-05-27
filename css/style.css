@@ -1211,7 +1211,7 @@ a {
     background-repeat: no-repeat;
 
     /* Ajusta el porcentaje si el logo se ve muy grande o muy pequeño */
-    background-size: 100%;
+    background-size: contain;
 
     /* El color de fondo oscuro para que la imagen se fusione (ajusta al de tu portfolio si es necesario) */
     background-color: #111827;
@@ -1233,7 +1233,7 @@ a {
     background-repeat: no-repeat;
 
     /* Ajusta el porcentaje si el logo se ve muy grande o muy pequeño */
-    background-size: 100%;
+    background-size: contain;
 
     /* El color de fondo oscuro para que la imagen se fusione (ajusta al de tu portfolio si es necesario) */
     background-color: #111827;
