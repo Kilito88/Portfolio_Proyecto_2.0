@@ -1204,7 +1204,7 @@ a {
 /* Fondo difuminado de Abrebox para la tarjeta de proyecto */
 .abrebox-bg {
     /* Ruta a tu imagen */
-    background-image: url('/img/favicon.png');
+    background-image: url('../img/favicon.png');
     background-position: center;
     background-repeat: no-repeat;
 
@@ -1224,7 +1224,7 @@ a {
 
 .github-bg {
     /* Ruta a tu imagen */
-    background-image: url('/img/GitHub.png');
+    background-image: url('../img/GitHub.png');
     background-position: center;
     background-repeat: no-repeat;
 
